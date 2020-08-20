@@ -6,11 +6,8 @@ for val in range(start,end+1):
    if val >1 :
       for n in range(2, val//2 +2):
          if val % n == 0:
-              if val == n:
-                 print(val) 
-              else: break
-           
-         else :
-           print(val)
- 
+              break
+         else:
+            if n == val//2 +1:
+               print(val)
      
