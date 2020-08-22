@@ -1,0 +1,35 @@
+# rightshit
+#leftshit
+def leftrotate(lists,num):
+    output_list = []
+    
+    
+    #for item in range(len(lists)-num, len(lists)):
+     #  output_list.append(lists[item]) 
+    #for item in range(0 , len(lists)-num):
+     #  output_list.append(lists[item])
+    
+    for item in range(num - len(lists),(num - len(lists))+len(lists)):
+       output_list.append(lists[item])
+    
+        
+    return output_list
+      
+list1 = [1,2,3,4,5,6]
+num1 = 2
+print(leftrotate(list1,num1))
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+# for squaring numbers till n number
+def sqrsm(n):
+    sm = 0
+    for i in range(1,n+1):
+        sm = sm+(i*i)
+    return sm
+n = 5
+
+print(sqrsm(n))
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
